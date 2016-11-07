@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>Shit</title>
+	<script src="https://yastatic.net/jquery/1.6.4/jquery.min.js"></script>
+</head>
+<body>
+<style>
+div { background:white; margin:150px; width:80px; 
+        display:none; float:left; text-align:center; }
+</style>  
+  <button id="showr">Show</button>
+  <button id="hidr">Hide</button>
+  <div><a href="first.html"><img src="coil5.png"/></a></div>
+  <div><a href="second.html"><img src="coil1.png"/></a></div>
+  <div><img src="coil2.png"/></div>
+  <div><img src="coil4.png"/></div>
+<script>
+$("#showr").click(function () {
+  $("div:eq(0)").show("fast", function () {
+    $(this).next().show("fast", arguments.callee);
+  });
+});
+$("#hidr").click(function () {
+$("div:eq(0)").hide("fast", function () {
+  $(this).next().hide("fast", arguments.callee);
+  });
+});
+</script>
+</body>
+</html>
+ 

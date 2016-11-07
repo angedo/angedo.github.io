@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>Minigame</title>
+	<script src="https://yastatic.net/jquery/1.6.4/jquery.min.js"></script>
+</head>
+<body>
+<style> 
+.dick {
+position:absolute; 
+    background-color:white; 
+    left:50px;
+    width:90px; 
+    height:90px;
+    margin:5px; 
+
+}
+#nat {
+position:absolute; 
+    background-color:white; 
+    left:500px;
+    width:90px; 
+    height:90px;
+    margin:5px; 
+}
+</style>
+<script>
+  $(document).ready(function(){
+    
+    $("#right").click(function(){
+      $(".dick").animate({"left": "+=50px"}, "slow");
+    });
+
+    $("#left").click(function(){
+      $(".dick").animate({"left": "-=50px"}, "slow");
+    });
+
+  });
+</script>
+  <button id="left">A BIT BACKWARDS</button> <button id="right">FUCK NAT!</button>
+<div class="dick"><img src="dick.jpg"/></div>
+<div id="nat"><img src="nat.jpg"/></div>
+</body>
+</html>
