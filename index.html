@@ -5,10 +5,18 @@
 
 <link rel="stylesheet" type="text/css" href="style.css">
 	<script>
-var arrColor=["red","white","black","#fffddf", "green", ]
+var i=0;
+var arrColor=["red","white","black","yellow"];
+
 function changeBackground(){
-var i=Math.floor(Math.random()*5);
-document.body.style.backgroundColor=arrColor[i];
+
+ 
+$('body').animate({backgroundColor:arrColor[i]},5);
+
+i++;
+
+if(i>=arrColor.length)
+{i=0;}
 
 }
 </script>
