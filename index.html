@@ -1,15 +1,24 @@
 
 <html>
 <head>
+	<title>Союз Литвы и Австро-Венгрии</title>
 
 <link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+var arrColor=["red","white","black","#fffddf", "green", ]
+function changeBackground(){
+var i=Math.floor(Math.random()*5);
+document.body.style.backgroundColor=arrColor[i];
+
+}
+</script>
 
 </head>
-<body bgcolor="#fffddf">
-
+<body onLoad="setInterval('changeBackground()',10);">
+<audio autoplay loop> <source src="DabstepStar.mp3" type="audio/mp3" ; codecs=vorbis"> </audio>
 
  <center>
-    <a href ="http://yandex.com"><img id="wheel1"  src="circ.png"></a>
+    <img id="wheel1"  src="circ.png">
 </center>
 
     <img id="wheel2" src="coil3.png">
