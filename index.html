@@ -12,7 +12,7 @@ var arrColor=["#cc3333","#cc6633","#ff9933","#ffcc00","#ffff00","#cccc00","#0099
 function changeBackground(){
 
  
-$('body').animate({backgroundColor:arrColor[i]},1000);
+$('body').animate({backgroundColor:arrColor[i]},10);
 
 i++;
 
@@ -23,7 +23,7 @@ if(i>=arrColor.length)
 </script>
 
 </head>
-<body onLoad="setInterval('changeBackground()',2000);">
+<body onLoad="setInterval('changeBackground()',10);">
 <audio autoplay loop> <source src="DabstepStar.mp3" type="audio/mp3" ; codecs=vorbis"> </audio>
 
  <center>
