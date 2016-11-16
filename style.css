@@ -1,6 +1,6 @@
  #wheel1 {
     animation-name: spin1;
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 	margin-top: 50px;
@@ -23,7 +23,7 @@
 #wheel2 {
 	position: fixed;
     animation-name: spin2;
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 	margin-top: 50px;
