@@ -4,6 +4,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 	margin-top: 50px;
+	 position: fixed
  
     z-index: 100;
 }
