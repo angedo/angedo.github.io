@@ -42,6 +42,9 @@
 	position:fixed;
 	left: 10%;
 	top: 10%;
+background-size:cover;
+	max-width:10%;
+	max-height:10%;
 	
 	
 }
@@ -50,6 +53,9 @@
 	right: 10%;
 	top: 10%;
 	
+background-size:cover;
+	max-width:10%;
+	max-height:10%;
 	
 }
 
@@ -58,6 +64,9 @@
 	left: 10%;
 	bottom: 10%;
 	
+background-size:cover;
+	max-width:10%;
+	max-height:10%;
 	
 }
 .link4{
@@ -65,5 +74,8 @@
 	right: 10%;
 	bottom: 10%;
 	
+background-size:cover;
+	max-width:10%;
+	max-height:10%;
 	
 }
