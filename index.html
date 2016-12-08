@@ -5,27 +5,101 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
-	<script>
-var i=0;
-var arrColor=["#cc3333","#cc6633","#ff9933","#ffcc00","#ffff00","#cccc00","#009933","#006699","#333366","#663366","#cc0066"];
 
-function changeBackground(){
-
- 
-$('body').animate({backgroundColor:arrColor[i]},10);
-
-i++;
-
-if(i>=arrColor.length)
-{i=0;}
-
-}
-</script>
 
 </head>
 <body onLoad="setInterval('changeBackground()',10);">
 <audio autoplay loop> <source src="DabstepStar.mp3" type="audio/mp3" ; codecs=vorbis"> </audio>
+<div id='blok' style=" height:100%;margin:0;  "></div>
+<script>
 
+
+var arrPic=["0.jpg","1.png","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"];
+//izmenit kol-vo blockov po verticali
+var nblh=prompt("ВВедите число блоков по горизонтали",10);
+
+var div=[];
+var htmlwidth=Math.round(document.documentElement.clientWidth);
+var bls=Math.round(htmlwidth/nblh);
+
+var jmax=Math.round(document.documentElement.clientHeight/bls) ;
+console.log(bls,nblh,document.documentElement.clientWidth);
+
+
+/*
+//pervii sposob sozdat blocki na ves ecran
+for( i=0;i<hblh;i++){
+for ( j=0;j<jmax;j++)
+{
+document.write('<bom  style = "border:1 black solid;width:'+bls+'; height:'+bls+'; background-color:red;position:absolute;left:'+i*bls+';top:'+j*bls+';" >  </bom>')  ;
+
+}}
+
+*/
+
+
+//vtoroi sposob
+
+for( i=0;i<nblh;i++){
+
+for (j=0;j<jmax;j++)
+{
+div1=document.createElement('div');
+div1.style.backgroundSize="cover";
+div1.style.position="absolute";
+div.push(div1);
+div[(i*jmax)+j].style.width =bls ;
+div[(i*jmax)+j].style.height = bls ;
+
+div[(i*jmax)+j].style.left = bls*i;
+div[(i*jmax)+j].style.top= bls*j;
+
+blok.appendChild(div[i*jmax+j]);
+
+
+}
+}
+
+/*var lastblh=Math.round(document.documentElement.clientHeight-bls*(jmax));
+console.log(lastblh);
+
+for (i=0;i<nblh;i++)
+{
+div1=document.createElement('div');
+div1.style.position="absolute";
+div.push(div1);
+div[nblh*jmax+i].style.width=bls;
+div[nblh*jmax+i].style.height=lastblh;
+div[(nblh*jmax)+i].style.left = bls*i;
+div[(nblh*jmax)+i].style.top= bls*jmax;
+blok.appendChild(div[nblh*jmax+i]);
+
+}
+*/
+
+
+
+
+function changeBdCr()
+{
+for (i=0;i<nblh*jmax;i++)
+div[i].style.backgroundImage = "url("+ arrPic[Math.floor(Math.random()*(arrPic.length))] +" ) ";
+
+
+
+}
+
+changeBdCr();
+
+$(document).ready(function () {
+
+});
+
+
+
+
+
+</script>
  <center>
     <img id="wheel1"  src="circ.png">
 </center>
