@@ -1,0 +1,93 @@
+
+<html>
+<head>
+	<title>Союз Литвы и Австро-Венгрии</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+html {
+    overflow: hidden;
+}
+.my-flex-container {
+  display: flex;
+  justify-content: space-around;
+  
+  flex: 1 1 100px;
+}
+.my-flex-item {
+background: red;
+}
+</style>
+
+</head>
+<body>
+
+<!-- <div id='blok' style=" height:100%;margin:0;"> -->
+<!--<script>
+	$("coil1").on("tap",function(){
+  $(this).hide();
+});
+var arrPic=["0.jpg","1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"];
+
+var nblh=10;
+
+var div=[];
+var htmlwidth=document.documentElement.clientWidth;
+var bls=Math.round(htmlwidth/nblh);
+
+var jmax=Math.round((document.documentElement.clientHeight*nblh)/document.documentElement.clientWidth);
+
+console.log(bls,jmax,document.documentElement.clientHeight,document.documentElement.clientWidth);
+
+
+for( i=0;i<nblh;i++){
+
+for (j=0;j<jmax;j++)
+{
+div1=document.createElement('div');
+div1.style.backgroundSize="cover";
+div1.style.position="absolute";
+
+div1.style.width =bls ;
+div1.style.height = bls ;
+
+div1.style.left = bls*i;
+div1.style.top= bls*j;
+div.push(div1);
+blok.appendChild(div[i*jmax+j]);
+}
+}
+
+function changeBdCr()
+{
+for (i=0;i<nblh*jmax;i++)
+div[i].style.backgroundImage = "url(Shit/"+ arrPic[Math.floor(Math.random()*(arrPic.length))] +" ) ";
+}
+changeBdCr();
+
+$(document).ready(function () {
+window.onwheel = function(){changeBdCr();}
+});
+
+
+</script>	-->
+ <div class="my-flex-container">
+	<div class="my-flex-item">
+     	<img id="wheel1"  src="circ.png">
+	</div>
+ 
+	<div class="my-flex-item" ">
+    	<img id="wheel1"  src="circ.png">
+	</div>
+ </div>
+   <!-- <img id="wheel2" src="coil3.png">
+	<a href ="Shit/game.html"><img id="wheel1" class="link1" src="coil5.png"></a>
+	<img id="wheel1" class="link2" src="coil1.png"/>
+	<a href ="/index2.html"><img id="wheel1" class="link3" src="coil2.png"/>
+	<img id="wheel1" class="link4" src="coil4.png"/>-->
+<!--</div>-->
+	
+
+</body>
+</html>
