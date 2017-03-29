@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+
+
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+
+.div {
+	height: 100%;
+	width: 100%;
+	 position: fixed;
+  overflow: auto;
+	
+}
+/* Clip text element */
+.clip-text {
+	
+    font-size:  15vw;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+   margin-top: 10vh;
+    padding: 15vh 23vw;
+    text-align: center;
+    /* Color fallback */
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.clip-text:before,
+.clip-text:after {
+    position: absolute;
+    content: '';
+}
+
+/* Background */
+.clip-text:before {
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+
+	
+	
+}
+
+/* Text Background (black zone) */
+.clip-text:after {
+    position: absolute;
+    z-index: -1;
+    top: 20%;
+    right: 10%;
+    bottom: 20%;
+    left: 10%;
+    background-color: #000;
+}
+
+.clip-text_one {
+    background-image: url(6.jpg);
+}
+
