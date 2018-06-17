@@ -5,7 +5,7 @@
 	
     var ctx = document.getElementById("myCanvas").getContext("2d");
 	myCanvas.height = 700;
-	myCanvas.width = 1500;
+	myCanvas.width = document.documentElement.clientWidth - 400;
 	
         function getCoords(e)
         {
